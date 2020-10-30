@@ -1,0 +1,42 @@
+div#background {
+    align-self: center;
+    width: 1024px;
+    height: 768px;
+    background-image: url('assets/background.gif');
+    position: absolute;
+}
+
+div#hero {
+    width: 43px;
+    height: 71px;
+    background-image: url('assets/hero7.gif');
+    position: absolute;
+    left: 575px;
+    top: 700px; 
+}
+
+div#missiles {
+    width: 1300px;
+    height: 500px;
+    position: absolute;
+}
+
+div.missile1 {
+    width: 30px;
+    height: 40px;
+    background-image: url('assets/bullet.PNG');
+    position: absolute;
+}
+
+div#enemies {
+    width: 1300px;
+    height: 500px ;
+    position: absolute;
+}
+
+div.enemy {
+    width: 51px;
+    height: 100px;
+    background-image: url('assets/enemy.png');
+    position: absolute;
+}
