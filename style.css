@@ -3,9 +3,9 @@ div#background {
     height: 768px;
     background: url(./assets/background.gif) no-repeat;
     background-size: cover;
+    background-attachment:fixed;
     position: absolute;
     overflow: hidden;
-
 }
 
 div#hero {
