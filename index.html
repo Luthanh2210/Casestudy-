@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h3>Score: <span id="score"></span></h3>
 <div id="background">
     <div id="hero"></div>
     <div id="missiles"></div>
@@ -14,29 +13,29 @@
 
 <script>
     var hero = {
-        left: 575,
-        top: 700
+        left: 512,
+        top: 668,
     };
 
     var missiles = [];
 
     var enemies = [
-        { left: 200, top: 100 },
-        { left: 300, top: 100 },
-        { left: 400, top: 100 },
-        { left: 500, top: 100 },
-        { left: 600, top: 100 },
-        { left: 700, top: 100 },
-        { left: 800, top: 100 },
-        { left: 900, top: 100 },
-        { left: 200, top: 175 },
-        { left: 300, top: 175 },
-        { left: 400, top: 175 },
-        { left: 500, top: 175 },
-        { left: 600, top: 175 },
-        { left: 700, top: 175 },
-        { left: 800, top: 175 },
-        { left: 900, top: 175 }
+        { left: 128, top: 96 },
+        { left: 228, top: 96 },
+        { left: 328, top: 96 },
+        { left: 428, top: 96 },
+        { left: 528, top: 96 },
+        { left: 628, top: 96 },
+        { left: 728, top: 96 },
+        { left: 828, top: 96 },
+        { left: 128, top: 180 },
+        { left: 228, top: 180 },
+        { left: 328, top: 180 },
+        { left: 428, top: 180 },
+        { left: 528, top: 180 },
+        { left: 628, top: 180 },
+        { left: 728, top: 180 },
+        { left: 828, top: 180 }
     ];
 
 
@@ -76,6 +75,9 @@
     function moveMissiles() {
         for(var i = 0 ; i < missiles.length ; i++ ) {
             missiles[i].top = missiles[i].top - 8
+            if(missiles[i].top === 0){
+                missiles.splice(missiles[i])
+            }
         }
     }
 
@@ -88,7 +90,10 @@
 
     function moveEnemies() {
         for(var i = 0 ; i < enemies.length ; i++ ) {
-            enemies[i].top = enemies[i].top + 1;
+            enemies[i].top = enemies[i].top + 1
+            if(enemies[i].top === 800){
+                enemies.splice(enemies[i])
+            }
         }
     }
 

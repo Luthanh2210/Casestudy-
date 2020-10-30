@@ -1,8 +1,7 @@
 div#background {
-    width: 1200px;
-    height: 800px;
-    background: url(./assets/background.gif);
-    background-repeat: no-repeat;
+    width: 1024px;
+    height: 768px;
+    background: url(./assets/background.gif) no-repeat;
     background-size: cover;
     position: absolute;
     overflow: hidden;
@@ -14,12 +13,12 @@ div#hero {
     height: 71px;
     background-image: url('assets/hero7.gif');
     position: absolute;
-    left: 575px;
-    top: 700px; 
+    left: 512px;
+    top: 668px;
 }
 
 div#missiles {
-    width: 1300px;
+    width: 1024px;
     height: 500px;
     position: absolute;
 }
@@ -32,7 +31,7 @@ div.missile1 {
 }
 
 div#enemies {
-    width: 1300px;
+    width: 1024px;
     height: 500px ;
     position: absolute;
 }
