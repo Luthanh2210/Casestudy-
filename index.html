@@ -3,15 +3,30 @@
 <head>
     <title>Chicken attack</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        body{
+            background-image: url("./assets/game-boy-logo-png-transparent.png");
+            background-repeat: no-repeat;
+            background-size: 600px 700px;
+            background-color: coral;
+            background-position: bottom right;
+        }
+    </style>
 </head>
 <body>
-<div id="background">
+<div id="background"><
     <div id="hero"></div>
     <div id="missiles"></div>
     <div id="enemies"></div>
 </div>
-
 <script>
+
     var hero = {
         left: 512,
         top: 668,
