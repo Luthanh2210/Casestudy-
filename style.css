@@ -1,11 +1,8 @@
 
-
-
-
-div#background {
+div#game-area {
     width: 1024px;
     height: 768px;
-    background: url(./assets/background.gif);
+    background-image: url(./assets/background.gif);
     position: absolute;
     overflow: hidden;
 
